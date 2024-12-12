@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tv-shows">TV Shows</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#popular">New & Popular</a></li>
+                    <li><a href="#list">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Welcome to Netflix</h1>
+            <p>Unlimited movies, TV shows, and more.</p>
+            <button>Watch Now</button>
+        </div>
+    </section>
+    <div>
+        <section id="movies" class="container">
+            <div class="movie-row-wrapper">
+                <h2>Trending Now</h2>
+                <div class="movie-row" id="trending"></div>
+            </div>
+        </section>
+    </div>
+    <div>
+        <div class="movie-row-wrapper">
+            <h2>Popular Movies</h2>
+            <div class="movie-row" id="popular-movies"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Netflix Clone</p>
+    </footer>
+</body>
+</html>

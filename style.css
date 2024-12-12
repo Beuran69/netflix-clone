@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    padding-top: 70px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #141414;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#banner {
+    height: 80vh;
+    background: url('https://image.tmdb.org/t/p/original/your-banner-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.movie-row-wrapper {
+    margin: 40px 0;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #141414;
+}
+
+.movie-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.movie-row::-webkit-scrollbar-track {
+    background-color: #141414;
+}
+
+.movie-row img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-row img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #141414;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .movie-row img {
+        width: 100px;
+        height: 150px;
+    }
+}
